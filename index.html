@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <ion-icon name="logo-instagram"></ion-icon>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #9b0268;
+    color: #ffffff;
+    padding: 20px;
+
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a700bd;
+}
+
+
+
+.sidebar {
+    background-color: #a80752;
+    padding: 20px;
+    color: #dfd9d9;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    background-color: #ccc;
+    position: sticky;
+    color: #ffffff;
+    top: 0;
+    height: 100vh;
+    padding: 10px;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+
+
+#info-pessoal img {
+    float: right;
+    border-radius: 150%;
+    width: 150px;
+    margin-left: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+button {
+ background-color: #a700bd; 
+ color: white; 
+ padding: 15px 32px; 
+ text-align: center; 
+ text-decoration: none; 
+ display: inline-block; 
+ font-size: 16px; 
+ margin: 4px 2px; 
+ cursor: pointer; 
+ transition: background-color 0.3s ease; 
+}
+
+button:hover {
+ background-color: #bb006d; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 65px;
+    height: 68px;
+    display: flex; 
+    align-items: center; 
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 4s ease;
+    flex-direction: row; 
+}
+
+.box .icon {
+    margin-right: 10px; 
+}
+.box:hover{
+    width: 200px;
+    background: #a700bd;
+    border-radius: 35px;
+    color: #ccc;
+    box-shadow: 0 0 50px #b31591;
+}
+
+.box:nth-child(2):hover{
+    background: #15b315;
+    box-shadow: 0 0 50px #005200;
+}
+
+.box:nth-child(3):hover{
+    background: #0382d6;
+    box-shadow: 0 0 50px #000a91;
+}
+.box p {
+    margin: 0;
+}
+
+
+</style>
+
+<body>
+    <script type="text/javascript" src="server.js"></script>
+    
+
+    
+    <header><h2>Currículo do Desenvolvedor</h2></header>
+    <div class="sidebar"> 
+      
+        <div id="lista-projetos"><h1>Meus Projetos</h1></div>
+        
+
+    </div>  
+      
+        </div>
+        <main>
+        <section id="info-pessoal">
+           
+           
+            <img src="img/WhatsApp Image 2024-04-30 at 4.29.13 PM.jpeg" id="direita">
+            
+            <div id="info-text">
+                <h1>Raíssa da Silva Camboim</h1>
+            <div class="box">
+                <div class="icon instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+                <p>@raissa.camboim</p>
+            </div>
+
+            <div class="box">
+                <a href="https://www.linkedin.com/onboarding/start/profile-location/new/"></a>
+                <div class="icon email">
+                    <ion-icon  name = "mail"> </ion-icon >
+                </div>
+                <p>email: raissacamboim@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <a href="https://www.linkedin.com/in/seu_perfil"></a>
+                <div class="icon linkedin">
+                    <ion-icon name="logo-linkedin"><link rel="stylesheet" href="https://www.linkedin.com/onboarding/start/profile-location/new/"></ion-icon> 
+                </div>
+                <p>in:Raissacamboim</p>
+            </div>
+              
+            </div>
+        </section>
+       
+        <section id="Portifolio">
+            <h2>Portifolio</h2>
+            <p>Ultilize o menu lateral para exibir</p>
+        </section>
+
+      
+        <section id="conteudo-exibido" styles="Display: none;">
+            <h2 id="titulo-conteudo"></h2>
+            <p id="descricao-conteudo"></p>
+            <img id="imagem-conteudo"></img> 
+            <p id="observacao" ></p>
+        </section>
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Minha jornada no TI tem sido repleta de desafios na programação, superações e esforços constantes. Enfrentei dificuldades complexas, mas cada obstáculo foi uma oportunidade de aprendizado e crescimento. A persistência foi minha aliada, e cada conquista, por menor que fosse, representou um avanço. A programação me ensinou a pensar de forma lógica e criativa, e hoje vejo o quanto cresci como profissional. Sei que ainda há muito a aprender, mas estou pronto para enfrentar qualquer desafio que surja em meu caminho, pois cada superação torna a jornada ainda mais gratificante.</p>
+            
+     
+        </section>
+
+
+
+
+
+        
+    </main> 
+</body>
